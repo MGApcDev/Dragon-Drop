@@ -3,9 +3,11 @@ Fun little project based of the youtube parody: https://www.youtube.com/watch?v=
 
 Real demo can be found on http://mgapcdev.com/project/dragon-drop-demo
 
-Requires jQuery and jQueryUI to run
+Requires jQuery and jQueryUI to run.
 
-Instructions:
+
+##Instructions:
+
 Drag and drop from "dragon" to create new dragons.
 
 Click on dragons to highlight them.
