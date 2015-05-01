@@ -8,7 +8,7 @@ Requires jQuery and jQueryUI to run.
 
 ##Instructions:
 
-Drag and drop from "dragon" to create new dragons.
+Drag and drop from "Dragon" to create new dragons.
 
 Click on dragons to highlight them.
 
