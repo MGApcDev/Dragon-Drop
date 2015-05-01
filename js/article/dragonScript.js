@@ -3,7 +3,7 @@ var varY;
 var varSrc;
 var highlight_element;
 var dragonNum = 0;
-var normalSrc = '/images/article/dragon-drop/dragon1.png';
+var defaultSrc = '/images/article/dragon-drop/dragon1.png';
 
 var baseURL = '/images/article/dragon-drop/';
 var extension = '.png';
@@ -27,10 +27,10 @@ $(document).ready(function(){
       },
       stop: function() {
           $('#dragon').hide();
-          $('#dragonImg').append('<img src="'+baseURL+'"dragon1.png" style="top:'+varY+'px; left:'+varX+'px;" class="dragon" dragonNum="'+dragonNum+'">');
+          $('#dragonImg').append('<img src="'+dragon1+'"" style="top:'+varY+'px; left:'+varX+'px;" class="dragon" dragonNum="'+dragonNum+'">');
           $.post(
               '/php/article/dragonDrop/setDragonCookie.php',
-              {dragonSrc: normalSrc, dragonTop: varY+'px', dragonLeft:varX+'px', dragonClass:'dragon', num: dragonNum}
+              {dragonSrc: defaultSrc, dragonTop: varY+'px', dragonLeft:varX+'px', dragonClass:'dragon', num: dragonNum}
           );
           dragonNum++;
       }
